@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Attendance App</title>
+<link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+<div class="container">
+  <h1>University Attendance App</h1>
+  <div id="loginScreen">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" id="showRegister">Register here</a>.</p>
+  </div>
+  <div id="registerScreen" style="display: none;">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="emailRegister" placeholder="Email" required>
+      <input type="password" id="passwordRegister" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="#" id="showLogin">Login here</a>.</p>
+  </div>
+  <div id="studentDashboard" style="display: none;">
+    <h2>Student Dashboard</h2>
+    <ul id="coursesList"></ul>
+  </div>
+  <div id="instructorDashboard" style="display: none;">
+    <h2>Instructor Dashboard</h2>
+    <button id="createCourse">Create New Course</button>
+    <ul id="coursesListInstructor"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
